@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <!-- OpenGraph -->
+    <meta property="og:title" content="CV Trabajo Final"/>
+    <meta property="og:description" content="Esta página web contiene mi CV"/>
+    <!-- Fuentes GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway&display=swap" rel="stylesheet">
+
+    <title>CV en pagina web</title>
+
+</head>
+
+<body>
+    
+  <!-- NAVEGADOR BARRA SUPERIOR-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/foto-nav.jpg" alt="foto-nav" class="d-inline-block align-text-center foto-nav">
+        JUAN RODRIGUEZ
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#datos-personales">Datos Personales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formacion-academica">Formación Académica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contenedor-experiencia">Experiencia Laboral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactame">Contactame</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- BIENVENIDA -->
+
+    <div class="bienvenida">
+          
+      <h1>¡HOLA, BIENVENIDOS!</h1>
+          
+        <div class="div-foto-bienvenida">
+            <img class="foto-bienvenida" src="imagenes/foto-bienvenida.jpg" alt="foto de perfil de bienvenida">
+        </div>
+        
+      <h3>Mi nombre es Juan Rodriguez y te invito a que me conozcas un poco más...</h3>
+
+    </div>
+
+    <!-- DATOS PERSONALES -->
+      
+    <div class="datos-personales" id="datos-personales">
+      
+      <div class="titulos">
+        <h1>DATOS PERSONALES</h1>
+      </div>
+
+      <div class="lista-datos container-fluid">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="ubicación"><i class="fa-sharp fa-solid fa-location-dot iconos"></i>Tandil, Prov. Buenos Aires, Argentina</li>
+          <li class="list-group-item" id="teléfono"><i class="fa-sharp fa-solid fa-phone iconos"></i>249-598989</li>
+          <li class="list-group-item" id="email"><i class="fa-sharp fa-solid fa-envelope iconos"></i>juan.r@gmail.com</li>
+          <li class="list-group-item" id="DNI"><i class="fa-sharp fa-solid fa-address-card iconos"></i>34.584.652</li>
+          <li class="list-group-item" id="fecha-nacimiento"><i class="fa-sharp fa-solid fa-calendar-days iconos"></i>23/07/1990</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- FORMACIÓN ACADÉMICA -->
+
+    <div class="formacion-academica" id="formacion-academica">
+      
+      <div class="titulos">
+        <h1>FORMACIÓN ACADÉMICA</h1>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/imagenes/primaria.jpg" class="d-block w-100" alt="foto de escuela primaria">
+              <div class="carousel-caption d-flex">
+                <h4>Escuela Primaria N°1 Manuel Belgrano - TANDIL</h4>
+                <p>1997-2003</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/imagenes/secundaria.jpg" class="d-block w-100" alt="foto de escuela secundaria">
+              <div class="carousel-caption d-flex">
+                <h4>Colegio Secundario San José - TANDIL</h4>
+                <p>2004-2008 Orientación en Economía y Administración</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/imagenes/universidad.jpg" class="d-block w-100" alt="foto de universidad">
+              <div class="carousel-caption  d-flex">
+                <h4>Facultad de Económicas - UNICEN - TANDIL</h4>
+                <p>2009-2014 Título Contador Público</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>    
+      </div>
+    </div>
+
+    <!-- EXPERIENCIA LABORAL --> 
+
+    <div class="contenedor-experiencia" id="contenedor-experiencia">
+
+      <div class="titulos">
+        <h1>EXPERIENCIA LABORAL</h1>    
+      </div>
+    
+      <!-- grilla de fotos-->
+      
+      <div class="container-fluid cuadricula">
+        <div class="row row-fotos">
+          <div class="col-lg-6 p-1 bg-dark card">
+            <a href="#btn-auto">
+              <button class="boton-cuadricula" id="btn-mc">
+                <img class="foto-cuadricula" src="/imagenes/McDonald´s2.jpg" alt="foto de Mc Donald´s">
+                              
+                  <h1 class="titulo-foto">MC DONALD´S</h1>           
+                  
+              </button>
+            </a>
+          </div>
+          <div class="col-lg-6 p-1 bg-dark card">
+            <a href="#btn-auto">
+              <button class="boton-cuadricula" id="btn-contador">
+                <img class="foto-cuadricula" src="/imagenes/estudio_contable.jpg" alt="foto agenda de contador">
+                              
+                  <h1 class="titulo-foto">CONTADOR PÚBLICO</h1>           
+                  
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="row row-fotos">
+          <div class="col-lg-6 p-1 bg-dark card">
+            <a href="#btn-auto">
+              <button class="boton-cuadricula" id="btn-auto">
+                <img class="foto-cuadricula" src="/imagenes/concesionario-MB.jpg" alt="foto de concesionaria de autos">
+                              
+                  <h1 class="titulo-foto">CONCESIONARIO MERCEDEZ BENZ</h1>           
+                  
+              </button>
+            </a>
+          </div>
+          <div class="col-lg-6 p-1 bg-dark card">
+            <a href="#btn-auto">
+              <button class="boton-cuadricula" id="btn-inmobiliaria">
+                <img class="foto-cuadricula" src="/imagenes/remax.jpg" alt="foto de inmobiliaria Remax">
+                              
+                  <h1 class="titulo-foto">INMOBILIARIA RE/MAX</h1>           
+                  
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- a continuacion texto oculto para cada imagen al seleccionar JS-->
+
+      <div class="texto-oculto" id="texto-oculto">
+        
+        <div class="trabajo-mcdonalds" id="text-mc">
+          
+          <h2>Mc Donald´s</h2>
+          <p>McDonald's es una franquicia de restaurantes de comida rápida estadounidense con sede en Chicago, Illinois. Sus principales productos son las hamburguesas, las patatas fritas, los menús para el desayuno y los refrescos. Atiende aproximadamente a 68 millones de clientes por día, en más de 36.000 establecimientos de 118 territorios y países alrededor del mundo</p>
+          
+          <div class="descripcion-trabajo">
+            <p><strong>CARGO OCUPADO:</strong> Cocinero, vendedor.</p>
+            <p><strong>TAREAS REALIZADAS:</strong> Trabajo en equipo, atención al cliente, manejo de capital, elaboración.</p>
+            <p><strong>TIEMPO EN EL CARGO:</strong> 2008-2010.</p>
+          </div>   
+
+        </div>
+
+        <div class="trabajo-contador" id="text-contador">
+          
+          <h2>Contador Público</h2>
+          <p>Universalmente, se conoce como Contador Público, aquel profesional dedicado a aplicar, analizar e interpretar la información contable y financiera de una organización, con la finalidad de diseñar e implementar instrumentos y mecanismos de apoyo a las directivas de la organización en el proceso de toma de decisiones.</p>
+          
+          <div class="descripcion-trabajo">
+            <p><strong>CARGO OCUPADO:</strong> Contador.</p>
+            <p><strong>TAREAS REALIZADAS:</strong> Trabajo en equipo, auditorías internas, libros contables, estados financieros, declaraciones y pagos de impuestos.</p>
+            <p><strong>TIEMPO EN EL CARGO:</strong> 2010-2015.</p>
+          </div>   
+        </div>
+
+        <div class="trabajo-concesionario" id="text-auto">
+          
+          <h2>Concesionario Mercedes-Benz</h2>
+          <p>Mercedes-Benz AG es una empresa alemana fabricante de vehículos, subsidiaria de la compañía Mercedes-Benz Group. La marca es reconocida por sus automóviles de lujo, deportivos, autobuses, camiones, utilitarios (SUVs) y vehículos todoterreno. Su eslogan es: Das Beste oder nichts ("Lo mejor o nada").</p>
+          
+          <div class="descripcion-trabajo">
+            <p><strong>CARGO OCUPADO:</strong> Vendedor.</p>
+            <p><strong>TAREAS REALIZADAS:</strong> Trabajo en equipo, venta de planes de automoviles, atención al cliente, asesoría.</p>
+            <p><strong>TIEMPO EN EL CARGO:</strong> 2015-2018.</p>
+          </div>   
+        </div>
+
+        <div class="trabajo-inmobiliaria" id="text-inmobiliaria">
+          
+          <h2>Inmobiliaria RE/MAX</h2>
+          <p>RE/MAX, abreviatura de Real Estate Maximums, es una empresa inmobiliaria internacional estadounidense que opera a través de un sistema de franquicia. En 2021, RE/MAX tenía más de 140.000 agentes en 8.000 oficinas. RE/MAX opera en unos 110 países.</p>
+          
+          <div class="descripcion-trabajo">
+            <p><strong>CARGO OCUPADO:</strong> Vendedor.</p>
+            <p><strong>TAREAS REALIZADAS:</strong> Trabajo en equipo, vendedor de inmuebles, asesoría, tareas de investigacion, tramites inmobiliarios.</p>
+            <p><strong>TIEMPO EN EL CARGO:</strong> 2018-2022.</p>
+          </div>   
+        </div>
+
+      </div>
+      
+    </div>
+
+    <!-- HABILIDADES -->
+
+    <div class="habilidades" id="habilidades">
+
+      <div class="titulos">
+        <h1>HABILIDADES</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 grilla-habilidades">
+        <div class="col">
+          <div class="card">
+            <img src="/imagenes/bandera-br-eeuu.jpg" class="card-img-top" alt="foto de la bandera brasilera y estadounidense">
+            <div class="card-body">
+              <h5 class="card-title">IDIOMAS</h5>
+              <p class="card-text">
+                <p>Ingles, nivel intermedio</p>
+                <p>Portugues, nivel intermedio</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/imagenes/pc-programas.jpg" class="card-img-top" alt="foto de programas informaticos">
+            <div class="card-body">
+              <h5 class="card-title">PROGRAMAS INFORMÁTICOS</h5>
+              <p class="card-text">
+                <p>Microsoft WORD</p>
+                <p>Microsoft EXCEL</p>
+                <p>Photoshop</p>
+                <p>Auto-CAD</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/imagenes/licencia-de-conducir.jpg" class="card-img-top" alt="foto licencia de conducir">
+            <div class="card-body">
+              <h5 class="card-title">LICENCIA DE CONDUCIR</h5>
+              <p class="card-text">CATEGORIA B2: Automóviles, camionetas, vans de uso privado y casas rodantes motorizadas hasta tres mil quinientos kilogramos (3500 kg) de peso con un acoplado de hasta setecientos cincuenta kilogramos (750 kg) o casa rodante no motorizada. Incluye clase B1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/imagenes/reloj.jpg" class="card-img-top" alt="foto reloj disponibilidad horaria">
+            <div class="card-body">
+              <h5 class="card-title">DISPONIBILIDAD HORARIA</h5>
+              <p class="card-text">FULL-TIME</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTACTO -->
+
+    <div class="formulario-final" id="contactame">
+      
+      <div class="titulos">
+        <h3>Si te intereso mi perfil te invito a que me compartas tu propuesta de trabajo</h3>
+      </div>
+            
+      <form action="" method="get" class="container">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+          <label for="Nombre">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="Apellido" placeholder="Apellido" required>
+          <label for="Apellido">Apellido</label>
+        </div> 
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="Empresa" placeholder="Empresa a la que representa" required>
+          <label for="Empresa">Empresa</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="Email" placeholder="Email" required>
+          <label for="Email">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Déjeme aquí su mensaje" id="Mensaje"></textarea>
+          <label for="Mensaje">Déjeme aquí su mensaje</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="file" class="form-control" id="Propuesta" placeholder="Propuesta de trabajo">
+          <label for="Propuesta">Propuesta de Trabajo (Opcional)</label>
+        </div>      
+        <div class="col-12 boton">
+          <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+        </div>
+      </form>
+
+    </div>
+
+  </main>  
+
+
+  <!-- script bootstrap CDN--> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- script JS-->
+  <script src="/js/js.js"></script>
+  <!-- script ICONOS Font-Awesome-->
+  <script src="https://kit.fontawesome.com/172ab7a7ac.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
